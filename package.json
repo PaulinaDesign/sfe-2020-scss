@@ -29,7 +29,6 @@
     "html-webpack-tags-plugin": "^2.0.17",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
-    "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
     "stylelint": "^12.0.1",
     "stylelint-config-sass-guidelines": "^6.2.0",
