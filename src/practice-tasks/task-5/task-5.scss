@@ -1,5 +1,11 @@
+@mixin transition($property) {
+    transition: $property 1s ease;
+}
+
 .task-5 {
     &__button {
+        @include transition(background-color);
+
         background-color: $color-accent-1;
         border: 0;
         border-radius: 3px;
