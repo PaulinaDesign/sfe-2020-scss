@@ -1,3 +1,7 @@
+@mixin transition($i) {
+    transition: $i ease;
+}
+
 .task-5 {
     &__button {
         background-color: $color-accent-1;
@@ -6,6 +10,7 @@
         color: $color-font;
         cursor: pointer;
         padding: 10px;
+        @include transition(1s);
 
         &:hover {
             background-color: $color-accent-2;

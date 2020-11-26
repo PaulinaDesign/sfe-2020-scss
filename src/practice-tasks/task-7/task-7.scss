@@ -5,4 +5,10 @@
         background-color: $color-accent-1;
         padding: 20px;
     }
+
+    @for $i from 1 through 5 {
+        &__item:nth-child(#{$i}) {
+            background-color: lighten($color-accent-1, 5% * $i);
+        }
+    }
 }

@@ -1,9 +1,17 @@
 .task-6 {
-    @function cta-transition($parameters) {
-        @return null;
+    @function cta-transition($params) {
+        $_animation-style: 1s ease;
+        $new-list: ();
+
+        @each $param in $params {
+            $new-list: append($new-list, $param $_animation-style, comma);
+        }
+        @return $new-list;
     }
 
     &__button {
+        $_transition-prop: box-shadow, background-color, transform;
+
         background-color: $color-accent-1;
         border: 0;
         border-radius: 3px;
@@ -12,6 +20,7 @@
         cursor: pointer;
         padding: 10px;
         transform: scale(1);
+        transition: cta-transition($_transition-prop);
 
         &:hover {
             background-color: $color-accent-2;
