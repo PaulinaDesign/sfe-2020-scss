@@ -1,9 +1,9 @@
 .task-2 {
-   $map-sizes: ('1': 100px, '2': 50px, '3': 25px, '4': 12.5px, '5': 6.25px);
+    $map-sizes: ('1': 100px, '2': 50px, '3': 25px, '4': 12.5px, '5': 6.25px);
 
     @each $item, $size  in $map-sizes {
-       .task-2__text-#{$item} {
-           font-size: $size;
-       }
-   }
+        .task-2__text-#{$item} {
+            font-size: $size;
+        }
+    }
 }
